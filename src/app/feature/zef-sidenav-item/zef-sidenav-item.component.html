@@ -1,0 +1,11 @@
+<mat-list-item >
+  <button mat-button class="zef-sidenav-item" [class.active]="active" (notYou)="notMe($event)" >
+    <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="15px">
+        <mat-icon fxFlex="10">{{ icon }}</mat-icon>
+        <div fxFlex fxLayoutAlign="start">{{ text }}</div>
+    </div>
+  </button>
+  <div matripple class="mat-button-ripple mat-ripple"></div>
+  <div class="mat-button-focus-overlay"></div>
+</mat-list-item>
+

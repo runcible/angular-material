@@ -1,0 +1,22 @@
+@import '../../../theme.scss';
+
+.zef-sidenav-item {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  color : $primary-text-dark;
+}
+
+
+.zef-sidenav-item:hover {
+  background: $accent;
+  color: #FFFFFF;
+}
+
+.zef-sidenav-item.active {
+  background-color: rgba($color: $accent, $alpha: 0.5);
+  color: #FFFFFF;
+}
+

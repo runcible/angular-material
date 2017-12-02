@@ -1,0 +1,89 @@
+
+@import '../theme.scss';
+
+.app-maincontent {
+  padding: 5px;
+  background-color : $app-maincontent-bg;
+}
+
+.app-maincontent mat-card {
+  margin: 5px;
+}
+
+.app-maincontent mat-checkbox {
+  margin: 10px;
+}
+
+.app-toolbar-filler {
+  flex: 1 1 auto;
+}
+
+.app-fab {
+  position: fixed !important;
+  bottom: 20px;
+  right: 20px;
+}
+
+.app-menu-button {
+  padding: 0;
+  min-width: 50px;
+}
+
+.app-list {
+  border: 1px solid rgba(0,0,0,0.12);
+}
+
+
+////////////
+.app-button {
+  margin: 5px;
+}
+
+.app-progress {
+  margin: 5px;
+}
+
+.app-spinner {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+}
+
+.app-input-icon {
+  font-size: 16px;
+  padding: 0 5px;
+}
+
+///////////////////////////////
+
+.app-titlebar {
+  background-color: $app-titlebar-bg;
+  color:  $app-titlebar-fg;
+  height: 64px;
+}
+
+.app-sidenav {
+  min-width: 200px;
+  visibility: visible;
+  background-color: $app-sidenav-bg;
+}
+
+.app-toolbar {
+  background-color: inherit;
+}
+
+.app-toolbarbutton {
+  height: 100%;
+}
+
+.app-logo {
+  height: auto;
+}
+
+
+
+
+
+
+
+

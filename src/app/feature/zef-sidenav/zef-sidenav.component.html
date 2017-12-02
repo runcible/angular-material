@@ -1,0 +1,14 @@
+<mat-list (click)="setActive($event)">
+
+  <zef-sidenav-item icon="dashboard" text="Dashboard" route="/dashboard" [active]="isActive('dashboard')"></zef-sidenav-item>
+
+  <mat-divider></mat-divider>
+  <h3 matSubheader>Management</h3>
+
+  <zef-sidenav-item icon="layers" text="Groups" route="/groups" [active]="isActive('groups')"></zef-sidenav-item>
+  <zef-sidenav-item icon="settings_input_svideo" text="Devices" route="/devices" [active]="isActive('devices')"></zef-sidenav-item>
+  <zef-sidenav-item #thing icon="update" text="Controls" route="/controls" [active]="isActive('controls')"></zef-sidenav-item>
+
+  <mat-divider></mat-divider>
+
+</mat-list>

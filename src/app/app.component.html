@@ -1,0 +1,42 @@
+<div [class.blue-light-theme]="isDarkTheme">
+<!--   <mat-toolbar class="app-titlebar mat-elevation-z2">
+      <button mat-button class="app-menu-button app-toolbarbutton" (click)="sidenav.toggle()">
+        <i class="material-icons">menu</i>
+      </button>
+      <span class="title" >ZEF Energy</span>
+      <span class="app-toolbar-filler"></span>
+      <zef-toolbar-user-button class="app-toolbarbutton"></zef-toolbar-user-button>
+  </mat-toolbar> -->
+
+  <mat-toolbar class="app-titlebar mat-elevation-z2">
+      <button mat-button class="app-menu-button app-toolbarbutton" (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="app-toolbar-filler"></span>
+      <img class="app-logo" src="assets/img/logo_long.png">
+      <span class="app-toolbar-filler"></span>
+      <zef-toolbar-user-button class="app-toolbarbutton"></zef-toolbar-user-button>
+  </mat-toolbar>
+
+  <mat-sidenav-container >
+
+    <mat-sidenav #sidenav [mode]="sideNavMode" [opened]="sideNavOpened" class="app-sidenav">
+      <zef-sidenav></zef-sidenav>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="app-maincontent">
+      <app-sample></app-sample>
+      <app-datatable></app-datatable>
+
+      <!-- Material Fab-->
+      <button mat-fab class="app-fab" (click)="isDarkTheme = !isDarkTheme">
+          <mat-icon class="mat-icon">favorite</mat-icon>
+          <div matripple class="mat-button-ripple mat-ripple mat-button-ripple-round"></div>
+          <div class="mat-button-focus-overlay"></div>
+        </button>
+        <!-- /Material Fab-->
+
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+</div>
