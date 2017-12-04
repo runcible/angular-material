@@ -1,4 +1,4 @@
-import { Component, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, ViewChild, AfterViewInit, Input } from '@angular/core';
 import {MatPaginator, MatTableDataSource} from '@angular/material';
 
 
@@ -35,7 +35,7 @@ const ELEMENT_DATA: Element[] = [
  */
 export class DatatableComponent implements AfterViewInit {
   displayedColumns = ['position', 'name', 'weight', 'symbol'];
-  dataSource = new MatTableDataSource(ELEMENT_DATA);
+  @Input() public dataSource = new MatTableDataSource(ELEMENT_DATA);
 
    @ViewChild(MatPaginator) paginator: MatPaginator;
 

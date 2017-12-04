@@ -1,5 +1,5 @@
 <mat-list-item >
-  <button mat-button class="zef-sidenav-item" [class.active]="active" (notYou)="notMe($event)" >
+  <button mat-button class="zef-sidenav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="route" >
     <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="15px">
         <mat-icon fxFlex="10">{{ icon }}</mat-icon>
         <div fxFlex fxLayoutAlign="start">{{ text }}</div>

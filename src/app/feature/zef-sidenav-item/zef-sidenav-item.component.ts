@@ -1,5 +1,4 @@
-import { Component, OnInit, Input, HostListener} from '@angular/core';
-
+import { Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'zef-sidenav-item',
@@ -10,7 +9,6 @@ export class ZefSidenavItemComponent implements OnInit {
   @Input() public icon:string;
   @Input() public text:string;
   @Input() public route:string;
-  @Input() public active:boolean;
 
   constructor() {}
 

@@ -1,4 +1,4 @@
-import { Component, OnInit ,ElementRef, Output, EventEmitter} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'zef-sidenav',
@@ -10,16 +10,7 @@ export class ZefSidenavComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
 
-  activeItemText:string = "";
-
-  isActive(text: string){
-    return this.activeItemText.toLowerCase() === text.toLowerCase();
-  }
-
-  setActive(event: any){
-    this.activeItemText = event.target.innerText;
   }
 
 }

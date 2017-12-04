@@ -1,22 +1,30 @@
 @import '../../../theme.scss';
 
+$color: $primary-text-dark;
+$color-bg: inherit;
+$active-color: #FFFFFF;
+$active-color-bg: $accent;
+
 .zef-sidenav-item {
   top: 0;
   left: 0;
   bottom: 0;
   width: 100%;
   position: absolute;
-  color : $primary-text-dark;
+  color : $color;
 }
 
-
 .zef-sidenav-item:hover {
-  background: $accent;
-  color: #FFFFFF;
+  background-color: darken( $active-color-bg, 5% );
+  color: $active-color
 }
 
 .zef-sidenav-item.active {
-  background-color: rgba($color: $accent, $alpha: 0.5);
-  color: #FFFFFF;
+  background-color: $active-color-bg;
+  color: $active-color;
+  &:hover {
+    background-color: darken( $active-color-bg, 5% );
+    color : lighten( $active-color, 5% );
+  }
 }
 

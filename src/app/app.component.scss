@@ -1,9 +1,13 @@
 
 @import '../theme.scss';
 
+.app-maincontainer {
+  min-height: 80vh;
+  background-color : $app-maincontainer-bg;
+}
+
 .app-maincontent {
   padding: 5px;
-  background-color : $app-maincontent-bg;
 }
 
 .app-maincontent mat-card {
@@ -78,6 +82,26 @@
 
 .app-logo {
   height: auto;
+}
+
+//////////////////////////
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+	margin-bottom: -142px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.app-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+	height: 142px;
+}
+.app-footer {
+  background: $app-footer-bg;
+  color: $app-footer-fg;
 }
 
 

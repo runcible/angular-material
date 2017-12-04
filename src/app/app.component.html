@@ -1,4 +1,4 @@
-<div [class.blue-light-theme]="isDarkTheme">
+<div [class.blue-light-theme]="isDarkTheme" >
 <!--   <mat-toolbar class="app-titlebar mat-elevation-z2">
       <button mat-button class="app-menu-button app-toolbarbutton" (click)="sidenav.toggle()">
         <i class="material-icons">menu</i>
@@ -18,15 +18,14 @@
       <zef-toolbar-user-button class="app-toolbarbutton"></zef-toolbar-user-button>
   </mat-toolbar>
 
-  <mat-sidenav-container >
+  <mat-sidenav-container class="app-maincontainer">
 
     <mat-sidenav #sidenav [mode]="sideNavMode" [opened]="sideNavOpened" class="app-sidenav">
       <zef-sidenav></zef-sidenav>
     </mat-sidenav>
 
     <mat-sidenav-content class="app-maincontent">
-      <app-sample></app-sample>
-      <app-datatable></app-datatable>
+      <router-outlet></router-outlet>
 
       <!-- Material Fab-->
       <button mat-fab class="app-fab" (click)="isDarkTheme = !isDarkTheme">
@@ -39,4 +38,9 @@
     </mat-sidenav-content>
 
   </mat-sidenav-container>
+
+  <footer class="app-footer">
+
+  </footer>
+
 </div>
